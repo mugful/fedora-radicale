@@ -7,4 +7,4 @@ COPY build.sh /root/build.sh
 RUN /root/build.sh
 
 USER radicale
-CMD ["/usr/bin/python3", "-m", "radicale", "--storage-filesystem-folder=/var/lib/radicale"]
+CMD ["/usr/bin/python3", "-m", "radicale", "--config=/etc/radicale/config"]
